@@ -52,7 +52,7 @@ $ brew cask install minikube
 注意，pilot 至少需要 2G 内存，所以在启动的时候，可以通过加参数的方法给 minikube 添加分配的资源，如果你机器的资源不够，推荐使用商业版本的 k8s 集群。
 
 ```bash
-$ minikube start --memory=8192 --cpus=4 --kubernetes-version=v1.10.0 --vm-driver=hyperkit
+$ minikube start --memory=8192 --cpus=4 --vm-driver=hyperkit
 ```
 
 ### 4. 安装 kubectl 命令行工具
@@ -76,7 +76,7 @@ $ brew install kubernetes-helm
 ### 1. 下载 SOFAMesh 源码
 
 ```bash
-$ git clone git@github.com:alipay/sofa-mesh.git
+$ git clone https://github.com/alipay/sofa-mesh.git
 $ cd sofa-mesh
 ```
 
